@@ -106,6 +106,9 @@ main img:hover{
     box-shadow: 10px 10px #fdc67d;
     border: dashed 10px pink;
 }
+.styled-baby-pic, .styled-profile-pic{
+    display: none;
+}
 /* hides the skip to main content and gives it an animation when tabbed on */
 a.skip{
     background: white;
@@ -155,28 +158,12 @@ cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  wid
     h2:hover{
         background: pink;
     }
+    .brunch-pic, .styled-profile-pic{
+        display: inline-flex;
+        margin: 30px;
+        justify-content: center;
+    }
     /* sets 4 column grid for each container */
-    #profile{
-        display: grid;
-        grid-template-columns: auto repeat(4, 150px) auto;
-        grid-template-rows: auto auto;
-        align-content: center;
-        justify-items: end;
-        margin: auto; 
-    }
-    /* sets each image in a grid in a pyramid form  */
-    .styled-profile-pic{
-        grid-column: 3 / span 1;
-        grid-row: 1/1;
-    }
-    .styled-baby-pic{
-        grid-column: 4/ span 1;
-        grid-row: 2/2;
-    }
-    .brunch-pic{
-        grid-column: 2/span 1;
-        grid-row: 2/2;
-    }
     .summer-container, .fall-container, .nostalgia-container, .starbucks-container, .alcohol-container, .asian-drinks-container{
         display: grid;
         grid-template-columns: auto repeat(4, 150px) auto;
@@ -307,6 +294,16 @@ cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  wid
     align-items: center;
     padding: 15px;
     margin: auto;
+    }
+    
+    .brunch-pic{
+        display: inline;
+    }
+    .styled-baby-pic{
+        display: inline;
+    }
+    .styled-profile-pic{
+        display: inline;
     }
 }
 /* turns off logo animation when enabled */
