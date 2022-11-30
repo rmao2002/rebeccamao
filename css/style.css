@@ -1,0 +1,317 @@
+/* importing 'poppins' font which is the same font as my portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* setting my logo dimensions and animated it to fade in  */
+#logo img {
+    height: 60px;
+    width: auto;
+}
+  
+#logo {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 100px;
+}
+#logo {
+    animation: fadein;
+    animation-duration: 8s; 
+}  
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+} 
+/* mobile view */
+body {
+    margin: 3%;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    color: #000000;
+    background-color: #FFAAA6;
+}
+header {
+    background-color: #fbfbfb;
+    border: 4px solid black;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+/* make the navigation items flex */
+nav li{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* when you hover over the links, a background color and box shadow will appear */
+a:hover{
+    background-color: #FFAAA6;
+    box-shadow: 0 5px rgb(185, 185, 185);
+    transform: translateY(-4px);
+    border-radius: 20px;
+    padding: 20px;
+}
+/* sets the current page */
+a.current{
+    background-color: #fdc4c1;
+    box-shadow: 0 5px rgb(185, 185, 185);
+    border: solid black;
+    transform: translateY(-4px);
+    border-radius: 20px;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+a:visited{
+    color: #000000;
+}
+main {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 12px;
+}
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 12px;
+    margin-bottom: 30px;
+}
+h2:hover{
+    background: #fdc67d;
+}
+p {
+    font-size: 18px;
+}
+main img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    border: 3px solid #fdc67d;
+    padding: 20px;
+}
+/* gave all my images a box shadow when hovered on */
+main img:hover{
+    box-shadow: 10px 10px #fdc67d;
+    border: dashed 10px pink;
+}
+/* hides the skip to main content and gives it an animation when tabbed on */
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+  
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: none;
+}
+footer p{
+    text-align: center;
+}
+/* change the cursor to be a spoon emoji */
+body, html{
+cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='45' height='50' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥄</text></svg>") 16 0,auto;
+}
+.pinterest{
+    display: flex;
+    justify-content: center;
+}
+/* tablet view */
+@media screen and (min-width: 768px){
+    body > header {
+        position: sticky;
+        top: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    nav li {
+        width: 50%;
+    }
+    h2:hover{
+        background: pink;
+    }
+    /* sets 4 column grid for each container */
+    #profile{
+        display: grid;
+        grid-template-columns: auto repeat(4, 150px) auto;
+        grid-template-rows: auto auto;
+        align-content: center;
+        justify-items: end;
+        margin: auto; 
+    }
+    /* sets each image in a grid in a pyramid form  */
+    .styled-profile-pic{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .styled-baby-pic{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .brunch-pic{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    .summer-container, .fall-container, .nostalgia-container, .starbucks-container, .alcohol-container, .asian-drinks-container{
+        display: grid;
+        grid-template-columns: auto repeat(4, 150px) auto;
+        grid-template-rows: auto auto;
+        align-content: center;
+        justify-items: end;
+        margin: auto; 
+    }
+    .lemon{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .mochi{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .tirimisu{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    .apple{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .banana{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .egg{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    .roll{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .cake{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .cookie{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    .pink{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .mocha{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .matcha{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    .champagne{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .mojito{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .dirty-shirley{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    .lychee{
+        grid-column: 3 / span 1;
+        grid-row: 1/1;
+    }
+    .yakult{
+        grid-column: 4/ span 1;
+        grid-row: 2/2;
+    }
+    .boba{
+        grid-column: 2/span 1;
+        grid-row: 2/2;
+    }
+    
+}
+/* desktop view */
+@media screen and (min-width: 1024px){
+    /* flex container and images to be in a row */
+    h2:hover{
+        background: rgb(165, 230, 221);
+    }
+    .summer-container, .fall-container, .nostalgia-container, .starbucks-container, .alcohol-container, .asian-drinks-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #profile{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* sets all the image to the same height and margin when flexed */
+    img:not(#logo){
+        flex: 1 0 25%;
+        margin: 15px;
+        height: auto;
+    }
+    /* add emoji to all the h1 */
+    .about::after{
+        content:'\1F44B';
+    }
+    .sweets::after{
+        content:'\1F382';
+    }
+    .sweets::before{
+        content:'\1F382';
+    }
+    .beverage::after{
+        content:'\2615';
+    }
+    .beverage::before{
+        content:'\2615';
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    }
+}
+/* turns off logo animation when enabled */
+@media (prefers-reduced-motion: reduce){
+    #logo {
+        animation: none;
+    }
+}

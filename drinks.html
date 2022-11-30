@@ -9,43 +9,70 @@
     <title>Drinks</title>
 </head>
 <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <a class="skip" href="#main">Skip to Main Content</a>
     <header>
+        <img src="images/portfolio logo copy.png" alt="Rebecca Mao logo" id = "logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="desserts.html">Desserts</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
+                <li><a class = "current" href="drinks.html">Drinks</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>My Favorite Drinks</h1>
-        <h3>My Starbucks Go-Tos</h3>
-        <p>I don't go to Starbucks often as I usually like to get my coffee from smaller local cafes (also Starbucks has raised their prices while the quality of their drinks stayed the same).
+    <main id = "main">
+        <div class="intro">
+            <h1 class = "beverage">My Favorite Drinks</h1>
+            <p>
+                Though I've been conditioned ever since a kid to only really drink water because it was the healthiest and cheapest drink option from my parents point of view, below are 
+                my favorite drinks when I don't want to drink water. They're broken down into 3 categories: Starbucks go-tos, alcoholic favorites, and asian drinks.
+            </p>
+        </div>
+        <div class="text-container">
+            <h2>My Starbucks Go-Tos</h2>
+            <p>I don't go to Starbucks often as I usually like to get my coffee from smaller local cafes (also Starbucks has raised their prices while the quality of their drinks stayed the same).
             Yet sometimes when I just want a quick drink to pick up and go, I'll go to my closest Starbucks and get one of my usual three drinks. 
             Depending on the weather, I'll rotate between getting a Pink Drink, a Caramel Mocha, and an Iced Matcha Latte. 
-        </p>
-        <div class="soda-container">
-            <img class="favorite-soda" src="images/pink-drink.jpg" width = 300 alt="pink drink from starbucks">
-            <img class="energy-drink" src="images/mocha.jpg" width = 300 alt="caramel mocha from starbucks">
-            <img class="sprite" src="images/matcha-lattes.jpeg" width = 300 alt="iced matcha latte from starbucks">
+            </p>
         </div>
-        <h3>Alcoholic Favorites</h3>
-        <div class="alcohol-container">
-            <img class="champagne" src="images/champagne.jpeg" width = 300 alt="two glasses of sparkling champagne">
+        <div class="starbucks-container">
+            <img class="pink"  src="images/pink-drink.jpg" width = 300 alt="pink drink from starbucks">
+            <img class="mocha"  src="images/mocha.jpg" width = 300 alt="caramel mocha from starbucks">
+            <img class="matcha" src="images/matcha-lattes.jpeg" width = 300 alt="iced matcha latte from starbucks">
+        </div>
+        <div class="text-container">
+            <h2>Alcoholic Favorites</h2>
+            <p>
+                I'm not the biggest fan of the taste of alcohol so when I wish to drink alcohol (responsibly of course), I'll opt for a fruity cocktail or something sparkling. My favorites being champagne, mojitos, and dirty shirleys.
+            </p>
+        </div>
+        <div class="alcohol-container" >
+            <img class="champagne"  src="images/champagne.jpeg" width = 300 alt="two glasses of sparkling champagne">
             <img class="mojito" src="images/mojito.jpeg" width = 300 alt="glass of mojito with limes and basil leaves">
-            <img class="dirty shirley" src="images/dirty-shirley.jpeg" width = 300 alt="an alcoholic version of a shirley temple">
+            <img class="dirty-shirley" src="images/dirty-shirley.jpeg" width = 300 alt="an alcoholic version of a shirley temple">
         </div>
-        <h3>Asian Drinks</h3>
-        <div class="asian-drinks-container">
+        <div class="text-container">
+            <h2>Asian Drinks</h2>
+            <p>
+                Now asian drinks are drinks that I could drink daily. They're usually fruity and not overbearingly sweet. If I want something that will be filling and customizable I'll drink a bubble (boba) tea.
+                If I want something healthy, I'll drink Yakult which is a yogurt drink because it contains probiotics which helps with gut health.
+                Lastly, if I want something really refreshing I'll go with a lychee lemonade. 
+            </p>
+        </div>
+        <div class="asian-drinks-container" >
             <img class="boba" src="images/bubble-tea.jpeg" width = 300 alt="3 bubble tea drinks">
             <img class="yakult" src="images/yakult.jpeg" width = 300 alt="yakult drink">
             <img class="lychee" src="images/lychee.jpg" width = 300 alt="lychee lemonade drink">
         </div>
-        <h3>Check out my pinterest board of cocktails for inspiration for your next drink!</h3>
-        <a data-pin-do="embedBoard" data-pin-board-width="600" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/rebeccamao/cocktails-inspiration/"></a>
+        <h2>Check out my pinterest board of cocktails for inspiration for your next drink!</h2>
+        <div class = "pinterest">
+            <a data-pin-do="embedBoard" data-pin-board-width="600" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/rebeccamao/cocktails-inspiration/"></a>
+        </div>
     </main>
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <br>
+    <footer>
+        <p>Rebecca Mao © 2022</p>
+    </footer>
 </body>
 </html>
